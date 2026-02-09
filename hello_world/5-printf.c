@@ -1,11 +1,10 @@
 #include <stdio.h>
-
 /**
-* main: starting point of the programm
+*main-prints with proper grammar, but the outcome is a piece of art.
 *
-* name:lucas
+*description:lucas
 *
-* Return: 0 (success)
+*Return:0
 */
 	int main(void)
 		{
