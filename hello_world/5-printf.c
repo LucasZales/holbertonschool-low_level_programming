@@ -3,6 +3,8 @@
 /**
  * main - prints a message with proper grammar, followed by a new line
  *
+ * name - lucas 
+ *
  * Return: 0 (success)
  */
 	int main(void)
