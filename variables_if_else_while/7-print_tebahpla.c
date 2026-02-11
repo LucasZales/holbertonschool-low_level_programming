@@ -5,12 +5,12 @@
  */
 int main(void)
 {
-int _0 = '0';
-while (_0 <= '9')
+char z = 'z';
+while (z >= 'a')
 {
-putchar (_0);
-_0++;
+putchar(z);
+z--;
 }
-putchar ('\n');
+putchar('\n');
 return (0);
 }
