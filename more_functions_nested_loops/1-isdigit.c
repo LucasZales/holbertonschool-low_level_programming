@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- *_isupper - description
+ *_isdigit - description
  *@c: integer
  *Return:0 when complete.
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-if (c <= 57 && c >= 48)
+if (c <= 48 && c >= 57)
 {
 return (1);
 }
