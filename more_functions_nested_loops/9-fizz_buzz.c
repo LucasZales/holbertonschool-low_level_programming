@@ -27,10 +27,10 @@ int main(void)
 	{
 	printf("%d", Num);
 	}
-	if(Num != 100)
+	if (Num != 100)
 	printf(" ");
 	Num++;
 	}
 	printf("\n");
 	return (0);
-	}	
+	}
