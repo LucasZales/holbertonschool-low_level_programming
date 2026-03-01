@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- *main-prints the product of 2 arguments,and if there is an error shows argc != 3
+ *main-prints the product of 2 arguments, if there is an error shows argc != 3
  *@argc:contains the number of arguments
  *@argv:contains the arguments as strings
  *Return:Returns 1 on error, 0 on success
