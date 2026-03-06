@@ -1,3 +1,11 @@
+/**
+ * create_array - creates an array of chars and initializes it with a char
+ * @size: size of the array
+ * @c: character used to fill the array
+ *
+ * Return: pointer to the array, or NULL if size = 0 or malloc fails
+ */
+
 #include <stdlib.h>
 #include "main.h"
 
