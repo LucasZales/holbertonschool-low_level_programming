@@ -1,6 +1,14 @@
 #ifndef DOG_H
 #define DOG_H
 
+/**
+ * struct dog - represents a dog
+ * @name: name of the dog
+ * @age: age of the dog
+ * @owner: owner of the dog
+ */
+
+
 #include <stddef.h>
 
 struct dog
