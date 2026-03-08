@@ -6,7 +6,8 @@
  * @min: first value
  * @max: last value
  *
- * Return: pointer to the new created array, or NULL if min > max or malloc fails
+ * Return: pointer to the newly created array,
+ *         or NULL if min > max or malloc fails
  */
 int *array_range(int min, int max)
 {
@@ -14,16 +15,16 @@ int *array;
 int i, size;
 
 if (min > max)
-return NULL;
+return (NULL);
 
 size = max - min + 1;
 
-array = malloc(size * sizeof(int));
+array = malloc(sizeof(int) * size);
 if (array == NULL)
-return NULL;
+return (NULL);
 
 for (i = 0; i < size; i++)
 array[i] = min + i;
 
-return array;
+return (array);
 }
