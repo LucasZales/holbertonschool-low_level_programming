@@ -15,10 +15,10 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	if (format != NULL) /* 1st if */
+	if (format != NULL)
 		while (format[i] != '\0')
 		{
-			switch (format[i]) /* no cuenta como if */
+			switch (format[i])
 			{
 				case 'c':
 					printf("%s%c", sep, va_arg(args, int));
@@ -34,7 +34,7 @@ void print_all(const char * const format, ...)
 					printf("%s%s", sep, str == NULL ? "(nil)" : str);
 					break;
 			}
-			sep = ", ";
+			sep = ", "; /* se activa después de imprimir el primer elemento */
 			i++;
 		}
 
