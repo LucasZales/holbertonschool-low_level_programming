@@ -1,8 +1,9 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
- * print_list- prints a list
- * @h:head
+ * print_list - prints a list
+ * @h: head
  * Return:number of printed elements
  */
 
