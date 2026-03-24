@@ -3,33 +3,38 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new node
- * @head: double pointer
- * @str: string to add (duplicated)
+ * add_node- adds a node
+ * @head: pointer to head
+ * @str: string to duplicate
  *
- * Return: address of the new element, or NULL if it failed
+ * Return: address of new node, or NULL if failed
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node;
+	list_t *new;
+	unsigned int i = 0;
 
 	if (head == NULL || str == NULL)
 		return (NULL);
 
-	new_node = malloc(sizeof(list_t));
-	if (new_node == NULL)
+	new = malloc(sizeof(list_t));
+	if (new == NULL)
 		return (NULL);
 
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
+	/* contar longitud manualmente */
+	while (str[i] != '\0')
+		i++;
+
+	new->str = strdup(str);
+	if (new->str == NULL)
 	{
-		free(new_node);
+		free(new);
 		return (NULL);
 	}
 
-	new_node->len = strlen(str);
-	new_node->next = *head;
-	*head = new_node;
+	new->len = i;
+	new->next = *head;
+	*head = new;
 
-	return (new_node);
+	return (new);
 }
